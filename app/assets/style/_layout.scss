@@ -1,0 +1,209 @@
+.header {
+  background-color: #aa0601;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 4.16667%;
+  position: relative;
+  @include pad {
+    padding: 30px 2.85714%;
+  }
+  @include mobile {
+    justify-content: center;
+    padding:10px 2.85714%;
+  }
+  .menu{
+    display:none;
+    @include mobile{
+      display:block;
+      position: absolute;
+      left:4.26%
+    }
+  }
+  .logo{
+    @include mobile{
+      width: 48px;
+    }
+  }
+  ul {
+    @include mobile {
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      max-height: 0px;
+      background-color: #aa0601;
+      z-index: 10;
+      overflow:hidden;
+      transition: all 0.8s;
+    }
+  }
+  li {
+    margin-left: 64px;
+    @include mobile{
+      margin-left: 0;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border:1px solid #FFFFFF;
+      width: 100%;
+    }
+    a {
+      text-decoration: none;
+      font-style: 20px;
+      line-height: 30px;
+      color: #ffffff;
+      display:block;
+    }
+  }
+}
+
+.active ul{
+  max-height:500px;
+}
+
+
+.footer {
+  background-color: #aa0601;
+  @include mobile {
+    // margin-top: 150px;
+  }
+  .footer-outer {
+    padding: 36px 2% 28px;
+    .footer-top {
+      justify-content: space-between;
+      @include mobile {
+        align-items: flex-start;
+      }
+      .footer-top-left {
+        flex-direction: column;
+        width: 70%;
+        @include mobile {
+          align-items: flex-start;
+        }
+        .footer-menu {
+          margin-bottom: 38px;
+          @include mobile {
+            display: none;
+          }
+          li {
+            margin-right: 5.96%;
+            @include pad {
+              margin-right: 7.95%;
+            }
+            a {
+              text-decoration: none;
+              display: block;
+              @include text-color-size(#ffffff, 16px);
+              line-height: 24px;
+            }
+          }
+        }
+      }
+      .footer-contact {
+        margin-bottom: 24px;
+        li {
+          align-items: center;
+          justify-content: flex-start;
+          .phone {
+            margin-right: 23px;
+            @include pad {
+              width: 23px;
+              margin-right: 12px;
+            }
+            @include mobile {
+              width: 13px;
+              margin-right: 8px;
+            }
+          }
+          .mail {
+            margin-right: 12px;
+            @include pad {
+              width: 32px;
+              margin-right: 8px;
+            }
+            @include mobile {
+              width: 20px;
+              margin-right: 5px;
+            }
+          }
+        }
+        a {
+          text-decoration: none;
+          display: block;
+          @include text-color-size(#ffffff, 36px);
+          line-height: 54px;
+          @include pad {
+            font-size: 20px;
+            line-height: 30px;
+          }
+          @include mobile {
+            font-size: 16px;
+            line-height: 30px;
+          }
+        }
+      }
+      .footer-media {
+        li {
+          margin-left: 32px;
+          @include pad {
+            margin-left: 24px;
+          }
+          img {
+            @include pad {
+              width: 24px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      justify-content: space-between;
+      border-top: 1px solid #ffffff;
+      padding-top: 24px;
+      align-items: center;
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .logo {
+        margin-right: 3.3%;
+        @include pad {
+          display: none;
+        }
+        @include mobile {
+          display: block;
+          width: 46px;
+          align-self: flex-end;
+          justify-self: end;
+          order: 1;
+        }
+      }
+      p {
+        @include text-color-size(#ffffff, 16px);
+        line-height: 24px;
+      }
+      .footer-bottom-list {
+        @include mobile {
+          flex-direction: column;
+        }
+        li{
+          margin-left: 62px;
+          @include pad{
+            margin-left: 24px;
+          }
+          @include mobile{
+            margin-left: 0;
+            margin-right: 24px;
+          }
+        }
+        a {
+          text-decoration: none;
+          @include text-color-size(#ffffff, 14px);
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}
