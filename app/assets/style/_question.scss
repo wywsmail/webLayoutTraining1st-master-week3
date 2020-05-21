@@ -1,0 +1,117 @@
+.question {
+  .banner {
+    background-image: url(../images/qa.png);
+    background-size: cover;
+    background-position: center center;
+    .container {
+      height: 304px;
+      align-items: flex-end;
+    }
+    h2 {
+      font-size: 64px;
+      line-height: 80px;
+      color: black;
+      @include pad {
+        font-size: 48px;
+        margin-left: 6.25%;
+      }
+      @include mobile {
+        font-size: 28px;
+        margin-left: 2.93%;
+      }
+    }
+    img {
+      @include pad {
+        width: 48px;
+      }
+      @include mobile {
+        width: 24px;
+      }
+    }
+  }
+  .content {
+    color: black;
+    padding-top: 88px;
+    padding-bottom: 156px;
+    @include pad {
+      padding-top: 40px;
+      padding-bottom: 104px;
+    }
+    @include mobile {
+      padding-top: 24px;
+      padding-bottom: 56px;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 63px;
+      padding-bottom: 16px;
+      @include pad {
+        font-size: 28px;
+        padding-bottom: 32px;
+        margin-left: 6.25%;
+      }
+      @include mobile {
+        font-size: 20px;
+        padding-bottom: 16px;
+        margin-left: 3%;
+      }
+    }
+    .card {
+      @include pad {
+        width: 87.5%;
+        margin: 0 auto;
+      }
+      @include mobile {
+        width: 93.86667%;
+      }
+    }
+    .card-item:not(.active) .up {
+      display: none;
+    }
+    .card-item.active .down {
+      display: none;
+    }
+    .card-item-title {
+      border: 1px solid #000;
+      a {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        color: black;
+        padding: 22px 3.16667%;
+        @include pad {
+          padding: 16px 3.57142%;
+        }
+        @include mobile {
+          padding: 16px 2.27272% 16px 4.54545%;
+        }
+        h3 {
+          font-size: 20px;
+          line-height: 23px;
+          font-weight: bold;
+          @include pad {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .card-item-body {
+      border: 1px solid #000;
+      align-items: center;
+      p {
+        padding: 22px 3.16667%;
+        font-size: 16px;
+        line-height: 24px;
+        @include pad {
+          padding: 16px 3.57142%;
+          font-size: 14px;
+          line-height: 21px;
+        }
+        @include mobile {
+          padding: 16px 4.54545%;
+        }
+      }
+    }
+  }
+}
