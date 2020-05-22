@@ -55,14 +55,20 @@
       padding-bottom: 16px;
       border: 1px solid #ffffff;
       width: 100%;
+      @include pad {
+        padding: 0;
+      }
     }
     a {
       text-decoration: none;
-      font-style: 20px;
+      font-size: 20px;
       line-height: 30px;
       color: #ffffff;
       display: block;
       padding:40px 32px;
+      @include pad {
+        padding: 16px 0;
+      }
     }
     a:hover{
       background-color: #650300;

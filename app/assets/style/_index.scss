@@ -143,6 +143,14 @@
       padding-top: 64px;
       padding-bottom: 80px;
       color: #650300;
+      @include pad{
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      @include mobile {
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
       h2 {
         font-size: 48px;
         line-height: 72px;
@@ -151,7 +159,7 @@
         @include pad {
           font-size: 32px;
           line-height: 48px;
-          padding-bottom: 32px;
+          padding-bottom: 0;
         }
         @include mobile {
           font-size: 24px;
@@ -265,8 +273,8 @@
         padding-bottom: 60px;
         @include pad {
           font-size: 24px;
-          list-style: 36px;
-          margin-bottom: 16px;
+          line-height: 36px;
+          padding-bottom: 16px;
         }
       }
       .img-group-top {
