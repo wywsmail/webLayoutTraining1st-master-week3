@@ -3,6 +3,12 @@ body {
   color:#FFFFFF;
 }
 
+input{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance: none;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
