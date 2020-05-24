@@ -62,7 +62,8 @@ body {
 input {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; }
+  appearance: none;
+  border-radius: 0; }
 
 .container {
   max-width: 1200px;
